@@ -35,8 +35,8 @@ BDEPEND="
 src_unpack() {
 	default
 	if [[ ${PV} == 9999 ]] ; then
-                git-r3_src_unpack
-        fi
+		git-r3_src_unpack
+	fi
 	use test && go-module_src_unpack
 }
 
